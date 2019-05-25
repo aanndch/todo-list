@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
+import ProgressBar from "react-bootstrap/ProgressBar";
 
 export default class TodoList extends Component {
   state = {
@@ -53,7 +54,7 @@ export default class TodoList extends Component {
     }
 
     return (
-      <div>
+      <div id="todoCard">
         <TodoForm onSubmit={this.addTodo} />
         {todos.map(todo => (
           <Todo
@@ -63,11 +64,12 @@ export default class TodoList extends Component {
             todo={todo}
           />
         ))}
+        <ProgressBar now={60} />
         <div>
           Todos left: {this.state.todos.filter(todo => !todo.complete).length}
         </div>
         <div>
-          <button onClick={() => this.updateTodoToShow("All")}>All</button>
+          <button onClick={() => this.updateTodoToShow("All")}> All </button>
           <button onClick={() => this.updateTodoToShow("Active")}>
             Active
           </button>

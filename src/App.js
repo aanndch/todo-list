@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import TodoList from "./components/TodoList";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 function App() {
   return (

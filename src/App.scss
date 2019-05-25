@@ -1,0 +1,50 @@
+.App {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todoCard {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#formCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todoForm {
+    height: 45px;
+    width: 80%;
+    display: flex;
+}
+
+#todoInput {
+    height: 100%;
+    padding: 0;
+    border: 0;
+    flex: 1;
+}
+
+#todoSubmit {
+    height: 100%;
+    width: 45px;
+    padding: 0;
+    background: #0097e6;
+    border: none;
+    border-radius: 13px;
+}
+
+.fa-plus {
+    font-size: 25px !important;
+    color: white;
+}

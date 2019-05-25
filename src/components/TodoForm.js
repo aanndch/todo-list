@@ -28,16 +28,19 @@ export default class TodoForm extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
+      <div id="formCard">
+        <form id="todoForm" onSubmit={this.handleSubmit}>
           <input
+            id="todoInput"
             name="text"
             type="text"
             value={this.state.text}
             onChange={this.handleChange}
-            placeholder="Math Homework"
+            placeholder="Add New"
           />
-          <button type="Submit">Create todo</button>
+          <button id="todoSubmit" type="Submit">
+            <i className="fa fa-plus" />
+          </button>
         </form>
       </div>
     );
